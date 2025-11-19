@@ -6,8 +6,8 @@ const Contato = () => {
     <div className="w-full min-h-screen bg-[#0A1022] text-white px-6 py-20">
       
       {/* TÍTULO */}
-      <h1 className="text-center text-5xl font-bold text-[#570000] mb-20">
-        Fale conosco
+      <h1 className="text-center text-5xl font-bold text-[#570000] mb-12">
+        Entre em Contato
       </h1>
 
       {/* GRID PRINCIPAL */}
@@ -15,23 +15,23 @@ const Contato = () => {
 
         {/* INFOS DE CONTATO */}
         <div className="space-y-8">
-          <h2 className="text-3xl font-semibold text-[#570000] mb-15">
+          <h2 className="text-3xl font-semibold text-[#570000]">
             Informações
           </h2>
 
           <div className="flex items-center gap-4">
-            <FaEnvelope className="text-[#570000] text-3xl mb-6" />
-            <p className="text-xl mb-6">contato@devsync.com</p>
+            <FaEnvelope className="text-[#570000] text-3xl" />
+            <p className="text-xl">contato@devsync.com</p>
           </div>
 
           <div className="flex items-center gap-4">
-            <FaPhone className="text-[#570000] text-3xl mb-6" />
-            <p className="text-xl mb-6">(11) 90000-0000</p>
+            <FaPhone className="text-[#570000] text-3xl" />
+            <p className="text-xl">(11) 90000-0000</p>
           </div>
 
           <div className="flex items-center gap-4">
-            <FaMapMarkerAlt className="text-[#570000] text-3xl mb-6" />
-            <p className="text-xl mb-6">São Paulo - SP, Brasil</p>
+            <FaMapMarkerAlt className="text-[#570000] text-3xl" />
+            <p className="text-xl">São Paulo - SP, Brasil</p>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ const Contato = () => {
 
             <button
               type="submit"
-              className="cursor-pointer w-full bg-[#570000] text-white py-3 rounded-lg text-lg font-semibold hover:bg-[#2c0101] transition"
+              className="w-full bg-[#570000] text-white py-3 rounded-lg text-lg font-semibold hover:bg-[#6d0000] transition"
             >
               Enviar
             </button>
