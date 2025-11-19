@@ -3,17 +3,16 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contato = () => {
   return (
-    <div className="w-full min-h-screen bg-[#0A1022] text-white px-6 py-20">
-      
-      {/* TÍTULO */}
-      <h1 className="text-center text-5xl font-bold text-[#570000] mb-12">
+    <div className="w-full min-h-screen bg-[#0A1022] text-white px-6 py-20 overflow-x-hidden font-special">
+
+      <h1 className="text-center text-4xl md:text-5xl font-bold text-[#570000] mb-12">
         Entre em Contato
       </h1>
 
-      {/* GRID PRINCIPAL */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+      {/* GRID */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
 
-        {/* INFOS DE CONTATO */}
+        {/* INFOS */}
         <div className="space-y-8">
           <h2 className="text-3xl font-semibold text-[#570000]">
             Informações
@@ -21,22 +20,22 @@ const Contato = () => {
 
           <div className="flex items-center gap-4">
             <FaEnvelope className="text-[#570000] text-3xl" />
-            <p className="text-xl">contato@devsync.com</p>
+            <p className="text-lg md:text-xl">contato@devsync.com</p>
           </div>
 
           <div className="flex items-center gap-4">
             <FaPhone className="text-[#570000] text-3xl" />
-            <p className="text-xl">(11) 90000-0000</p>
+            <p className="text-lg md:text-xl">(11) 90000-0000</p>
           </div>
 
           <div className="flex items-center gap-4">
             <FaMapMarkerAlt className="text-[#570000] text-3xl" />
-            <p className="text-xl">São Paulo - SP, Brasil</p>
+            <p className="text-lg md:text-xl">São Paulo - SP, Brasil</p>
           </div>
         </div>
 
-        {/* FORMULÁRIO */}
-        <div className="bg-white rounded-xl p-8 shadow-xl text-black">
+        {/* FORM */}
+        <div className="bg-white rounded-xl p-6 md:p-8 shadow-xl text-black">
           <h2 className="text-3xl font-semibold text-[#570000] mb-6">
             Envie uma mensagem
           </h2>
