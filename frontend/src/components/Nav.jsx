@@ -1,14 +1,21 @@
 import React from "react";
+import Logo from "../assets/logo.png";
+
 export default function Nav() {
   return (
-    <header className="bg-blue-800 text-white shadow-md">
+    <header className="bg-[#0A1022] text-white shadow-md">
       <nav className="max-w-6xl mx-auto py-7 flex justify-between items-center">
-        <h1 className="text-xl font-bold">DevSync</h1>
+        <a href="/" className="flex items-center gap-2">
+          <img 
+            src={Logo} 
+            alt="Logo" 
+            className="w-15 h-20 scale-450 object-contain"/>
+        </a>
 
-        <ul className="flex items-center gap-9 ">
-          <li className="hover:text-blue-300 cursor pointer"><a href="/">Início</a></li>
-          <li className="hover:text-blue-300 cursor pointer"><a href="/sobre">Sobre</a></li>
-          <li className="hover:text-blue-300 cursor pointer"><a href="/contato">Contato</a></li>
+        <ul className="font-special flex items-center gap-9 scale-110">
+          <li className="hover:text-[#570000] cursor-pointer"><a href="/">Início</a></li>
+          <li className="hover:text-[#570000] cursor-pointer"><a href="/Cadastro">Cadastro</a></li>
+          <li className="hover:text-[#570000] cursor-pointer"><a href="/contato">Contato</a></li>
         </ul>
       </nav>
     </header>

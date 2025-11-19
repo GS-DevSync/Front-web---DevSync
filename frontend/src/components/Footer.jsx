@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-800 text-gray-300 py-8 relative">
+    <footer className="bg-[#0A1122] text-white py-8 relative">
       <div className="max-w-6xl mx-auto px-4 text-center flex flex-col md:flex-row items-center justify-between gap-6">
 
         {/* Texto */}

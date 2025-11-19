@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Staatliches&display=swap');
+
+.font-special {
+  font-family: "Special Gothic Expanded One", sans-serif;
+}
