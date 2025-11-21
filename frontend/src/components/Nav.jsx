@@ -21,7 +21,7 @@ export default function Nav() {
             <a href="/">Início</a>
           </li>
           <li className="hover:text-[#570000] cursor-pointer">
-            <a href="/Cadastro">Cadastro</a>
+            <a href="/cadastro">Cadastro</a>
           </li>
           <li className="hover:text-[#570000] cursor-pointer">
             <a href="/contato">Contato</a>
