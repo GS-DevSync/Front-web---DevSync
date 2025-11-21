@@ -22,7 +22,17 @@ const Login = () => {
 
       if (response.ok) {
         localStorage.setItem("token", data.token);
-        navigate("/projetos");
+        localStorage.setItem("idUsuario", data.id);
+
+
+        // REDIRECIONAMENTO POR TIPO DE PERFIL
+        if (data.tipo === "pessoal") {
+          navigate("/perfilpessoal");
+        } else if (data.tipo === "empresa") {
+          navigate("/perfilcorporativo");
+        } else {
+          navigate("/projetos"); // fallback
+        }
       } else {
         alert(data.message);
       }
@@ -35,14 +45,11 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#0A1022] px-4">
       <div className="w-full max-w-lg bg-white rounded-3xl shadow-2xl p-10 border-l-4 border-[#570000]">
-
         <h1 className="text-4xl text-center text-[#570000] mb-10 font-special">
           Login
         </h1>
 
         <form onSubmit={handleLogin} className="flex flex-col gap-5">
-          
-          {/* E-mail */}
           <input
             type="email"
             placeholder="E-mail"
@@ -54,7 +61,6 @@ const Login = () => {
                        transition bg-white"
           />
 
-          {/* Senha */}
           <input
             type="password"
             placeholder="Senha"
@@ -66,7 +72,6 @@ const Login = () => {
                        transition bg-white"
           />
 
-          {/* Botão */}
           <button
             type="submit"
             className="font-special cursor-pointer bg-[#570000] text-white py-3 
@@ -75,7 +80,6 @@ const Login = () => {
             Entrar
           </button>
 
-          {/* Link para Cadastro */}
           <p
             className="font-special text-center text-sm text-[#0A1022] mt-2 cursor-pointer 
                        hover:underline hover:text-[#570000] transition"
@@ -83,7 +87,6 @@ const Login = () => {
           >
             Ainda não tem conta? Cadastre-se
           </p>
-
         </form>
       </div>
     </div>

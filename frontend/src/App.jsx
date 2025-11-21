@@ -4,6 +4,9 @@ import Login from './routes/Login.jsx';
 import Cadastro from './routes/Cadastro.jsx';
 import Contato from './routes/Contato.jsx';
 import Projetos from './routes/Projetos.jsx';
+import PerfilPessoal from './routes/PerfilPessoal.jsx';
+import PerfilCorporativo from './routes/PerfilCorporativo.jsx';
+import ProjetosPessoais from './routes/ProjetosPessoais.jsx';
 import Error from './routes/Error.jsx';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -21,6 +24,9 @@ function App() {
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/projetos" element={<Projetos />} />
+        <Route path="/perfilpessoal" element={<PerfilPessoal />} />
+        <Route path="/perfilcorporativo" element={<PerfilCorporativo />} />
+        <Route path="/projetospessoais" element={<ProjetosPessoais />} />
         <Route path="*" element={<Error />} />
       </Routes>
       </main>

@@ -47,6 +47,16 @@ export default function Nav() {
               Contato
             </a>
           </li>
+
+          <li>
+            <a 
+              href="/projetos" 
+              className="cursor-pointer transition transform hover:-translate-y-1 hover:scale-105 
+                         hover:text-[#570000] duration-200 inline-block"
+            >
+              Projetos
+            </a>
+          </li>
         
         </ul>
 
