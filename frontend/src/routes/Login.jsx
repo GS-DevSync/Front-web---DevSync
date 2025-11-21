@@ -10,18 +10,21 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3001/perfis");
-      const usuarios = await response.json();
+      const response = await fetch("http://localhost:3001/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, senha }),
+      });
 
-      const usuario = usuarios.find(
-        (u) => u.email === email && u.senha === senha
-      );
+      const data = await response.json();
 
-      if (usuario) {
-        localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
-        navigate("/projetos");
+      if (response.ok) {
+        localStorage.setItem("token", data.token); // salva token
+        navigate("/projetos"); // redireciona
       } else {
-        alert("E-mail ou senha inválidos!");
+        alert(data.message); // "Email ou senha inválidos"
       }
     } catch (error) {
       console.error("Erro ao fazer login:", error);
@@ -58,7 +61,6 @@ const Login = () => {
           >
             Entrar
           </button>
-
 
           <div className="flex justify-center gap-4 mt-2 text-sm">
             <span

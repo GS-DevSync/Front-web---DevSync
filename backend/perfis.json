@@ -1,11 +1,29 @@
 [
   {
-    "id": "86aebbdc-6ba3-4681-83d5-c0158203fec4",
-    "nome": "gi",
-    "dataNascimento": "2025-11-14",
+    "id": "15e1e2a6-f999-4977-8712-7bc12024ee83",
+    "nome": "gica",
+    "dataNascimento": "2025-11-02",
+    "email": "giovanna.c2turismo@hotmail.com",
+    "senha": "$2b$10$T6t3bESlD5kLOUcLRt/d4Ov4rd6lSjoru8C3rUpCAIURmlcJG5G6O",
+    "areaDesenvolvimento": "ux",
+    "nivelSenioridade": "techLead"
+  },
+  {
+    "id": "e688ab26-3d64-4115-9e01-9d3a443f1cf9",
+    "nome": "gigi",
+    "dataNascimento": "2025-10-30",
     "email": "giosay@hotmail.com",
-    "senha": "123",
-    "areaDesenvolvimento": "bigData",
+    "senha": "$2b$10$.4Psl3xYGbHUeE8OnPSlmOtyQqt.r./1K.N8EYvrExiEitbqTcTYC",
+    "areaDesenvolvimento": "ui",
     "nivelSenioridade": "senior"
+  },
+  {
+    "id": "161f8e97-411b-4a53-8099-cadb1fe6bbfe",
+    "nome": "oiuytds",
+    "dataNascimento": "2025-11-04",
+    "email": "carolsay@hotmail.com",
+    "senha": "$2b$10$jve96KtnAYclDtU/5sgyEuNQeDhF2MUarepwMJzHfBi3oE/bmo.BS",
+    "areaDesenvolvimento": "embeddedIoT",
+    "nivelSenioridade": "cto"
   }
 ]
