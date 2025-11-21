@@ -70,7 +70,7 @@ const Contato = () => {
 
             <button
               type="submit"
-              className="w-full bg-[#570000] text-white py-3 rounded-lg text-lg font-semibold hover:bg-[#6d0000] transition"
+              className="w-full bg-[#570000] text-white py-3 rounded-lg text-lg hover:bg-[#6d0000] transition"
             >
               Enviar
             </button>

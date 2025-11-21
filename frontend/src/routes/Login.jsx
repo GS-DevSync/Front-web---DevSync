@@ -21,10 +21,10 @@ const Login = () => {
       const data = await response.json();
 
       if (response.ok) {
-        localStorage.setItem("token", data.token); // salva token
-        navigate("/projetos"); // redireciona
+        localStorage.setItem("token", data.token);
+        navigate("/projetos");
       } else {
-        alert(data.message); // "Email ou senha inválidos"
+        alert(data.message);
       }
     } catch (error) {
       console.error("Erro ao fazer login:", error);
@@ -33,43 +33,57 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-[#FAD1DF]">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8 border border-[#F06292]">
-        <h1 className="text-3xl font-bold text-center text-[#0A192F] mb-6">
+    <div className="min-h-screen flex items-center justify-center bg-[#0A1022] px-4">
+      <div className="w-full max-w-lg bg-white rounded-3xl shadow-2xl p-10 border-l-4 border-[#570000]">
+
+        <h1 className="text-4xl text-center text-[#570000] mb-10 font-special">
           Login
         </h1>
-        <form onSubmit={handleLogin} className="flex flex-col gap-4">
+
+        <form onSubmit={handleLogin} className="flex flex-col gap-5">
+          
+          {/* E-mail */}
           <input
             type="email"
             placeholder="E-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="border border-[#F06292] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F06292]"
+            className="border border-[#0A1022] p-3 rounded-xl shadow-sm 
+                       focus:outline-none focus:ring-2 focus:ring-[#570000] 
+                       transition bg-white"
           />
+
+          {/* Senha */}
           <input
             type="password"
             placeholder="Senha"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
             required
-            className="border border-[#F06292] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F06292]"
+            className="border border-[#0A1022] p-3 rounded-xl shadow-sm 
+                       focus:outline-none focus:ring-2 focus:ring-[#570000] 
+                       transition bg-white"
           />
+
+          {/* Botão */}
           <button
             type="submit"
-            className="cursor-pointer bg-[#F06292] text-white font-semibold py-3 rounded-lg hover:bg-[#d94d7f] transition"
+            className="font-special cursor-pointer bg-[#570000] text-white py-3 
+                       rounded-xl shadow-md hover:bg-[#0A1022] transition text-lg"
           >
             Entrar
           </button>
 
-          <div className="flex justify-center gap-4 mt-2 text-sm">
-            <span
-              className="cursor-pointer text-[#000000] hover:underline"
-              onClick={() => navigate("/cadastro")}
-            >
-              Ainda não tem conta? Cadastre-se
-            </span>
-          </div>
+          {/* Link para Cadastro */}
+          <p
+            className="font-special text-center text-sm text-[#0A1022] mt-2 cursor-pointer 
+                       hover:underline hover:text-[#570000] transition"
+            onClick={() => navigate("/cadastro")}
+          >
+            Ainda não tem conta? Cadastre-se
+          </p>
+
         </form>
       </div>
     </div>

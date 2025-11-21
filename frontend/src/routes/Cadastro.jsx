@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-
 const Cadastro = () => {
   const API_URL = "http://localhost:3001/perfil";
   const navigate = useNavigate();
@@ -55,18 +54,22 @@ const Cadastro = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAD1DF] flex items-center justify-center">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8 border border-[#F06292]">
-        <h1 className="text-3xl font-bold text-center text-[#0A192F] mb-6">
+    <div className="min-h-screen bg-[#0A1022] flex items-center justify-center px-4">
+      
+      <div className="w-full max-w-lg bg-white rounded-3xl shadow-2xl p-10 border-l-4 border-[#570000]">
+
+        <h1 className="text-4xl text-center text-[#570000] mb-10 font-special">
           Cadastro
         </h1>
+
         <form
-          className="flex flex-col gap-4"
+          className="flex flex-col gap-5"
           onSubmit={(e) => {
             e.preventDefault();
             cadastrarPerfil();
           }}
         >
+          {/* INPUTS */}
           <input
             type="text"
             placeholder="Nome completo"
@@ -74,16 +77,20 @@ const Cadastro = () => {
             onChange={(e) =>
               setNovoPerfil({ ...novoPerfil, nome: e.target.value })
             }
-            className="border border-[#F06292] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F06292]"
+            className="border border-[#0A1022] p-3 rounded-xl shadow-sm focus:outline-none 
+                       focus:ring-2 focus:ring-[#570000] transition"
           />
+
           <input
             type="date"
             value={novoPerfil.dataNascimento}
             onChange={(e) =>
               setNovoPerfil({ ...novoPerfil, dataNascimento: e.target.value })
             }
-            className="border border-[#F06292] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F06292]"
+            className="border border-[#0A1022] p-3 rounded-xl shadow-sm focus:outline-none 
+                       focus:ring-2 focus:ring-[#570000] transition"
           />
+
           <input
             type="email"
             placeholder="E-mail"
@@ -91,8 +98,10 @@ const Cadastro = () => {
             onChange={(e) =>
               setNovoPerfil({ ...novoPerfil, email: e.target.value })
             }
-            className="border border-[#F06292] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F06292]"
+            className="border border-[#0A1022] p-3 rounded-xl shadow-sm focus:outline-none 
+                       focus:ring-2 focus:ring-[#570000] transition"
           />
+
           <input
             type="password"
             placeholder="Senha"
@@ -100,15 +109,18 @@ const Cadastro = () => {
             onChange={(e) =>
               setNovoPerfil({ ...novoPerfil, senha: e.target.value })
             }
-            className="border border-[#F06292] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F06292]"
+            className="border border-[#0A1022] p-3 rounded-xl shadow-sm focus:outline-none 
+                       focus:ring-2 focus:ring-[#570000] transition"
           />
 
+          {/* SELECTS */}
           <select
             value={novoPerfil.nivelSenioridade}
             onChange={(e) =>
               setNovoPerfil({ ...novoPerfil, nivelSenioridade: e.target.value })
             }
-            className="border border-[#F06292] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F06292]"
+            className="border border-[#0A1022] p-3 rounded-xl shadow-sm bg-white 
+                       focus:outline-none focus:ring-2 focus:ring-[#570000] transition"
           >
             <option value="">Selecione o nível de senioridade</option>
             <option value="estagiario">Estagiário / Intern</option>
@@ -120,60 +132,52 @@ const Cadastro = () => {
             <option value="cto">CTO / Head de Tecnologia</option>
           </select>
 
-
           <select
             value={novoPerfil.areaDesenvolvimento}
             onChange={(e) =>
               setNovoPerfil({ ...novoPerfil, areaDesenvolvimento: e.target.value })
             }
-            className="border border-[#F06292] p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F06292]"
+            className="border border-[#0A1022] p-3 rounded-xl shadow-sm bg-white 
+                       focus:outline-none focus:ring-2 focus:ring-[#570000] transition"
           >
             <option value="">Selecione a área de atuação</option>
-            {/* Desenvolvimento */}
             <option value="frontend">Frontend</option>
             <option value="backend">Backend</option>
             <option value="fullstack">Full-Stack</option>
             <option value="mobile">Mobile</option>
             <option value="desktop">Desktop / Software</option>
-
-            {/* Infraestrutura */}
             <option value="devops">DevOps / Cloud</option>
             <option value="sre">SRE</option>
             <option value="infraestrutura">Infraestrutura / Redes</option>
-
-            {/* Dados e Inteligência */}
             <option value="dataEngineer">Data Engineer</option>
-            <option value="dataAnalyst">Data Analyst / BI</option>
-            <option value="dataScientist">Data Scientist / Machine Learning</option>
+            <option value="dataAnalyst">Data Analyst</option>
+            <option value="dataScientist">Data Scientist</option>
             <option value="bigData">Big Data</option>
-
-            {/* Qualidade */}
             <option value="qa">QA / Testes</option>
-
-            {/* UX/UI */}
             <option value="ux">UX Designer</option>
             <option value="ui">UI Designer</option>
             <option value="productDesigner">Product Designer</option>
-
-            {/* Segurança */}
             <option value="cybersecurity">Cybersecurity</option>
-
-            {/* Outras especializações */}
             <option value="gameDev">Game Developer</option>
             <option value="embeddedIoT">Embedded / IoT</option>
             <option value="arVr">AR/VR Developer</option>
             <option value="blockchain">Blockchain / Web3</option>
           </select>
 
+          {/* BOTÃO */}
           <button
             type="submit"
-            className="cursor-pointer bg-[#F06292] text-white font-semibold py-3 rounded-lg hover:bg-[#d94d7f] transition"
+            className="font-special cursor-pointer bg-[#570000] text-white py-3 
+                       rounded-xl shadow-md hover:bg-[#0A1022] transition text-lg"
           >
             Cadastrar
           </button>
+
+          {/* LINK LOGIN */}
           <p
             onClick={() => navigate("/login")}
-            className="text-center text-sm text-[#0A192F] mt-2 cursor-pointer hover:underline"
+            className="font-special text-center text-sm text-[#0A1022] mt-2 cursor-pointer 
+                       hover:underline hover:text-[#570000] transition"
           >
             Já tem conta? Faça login
           </p>

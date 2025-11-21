@@ -17,15 +17,37 @@ export default function Nav() {
 
         {/* LINKS */}
         <ul className="font-special flex flex-wrap items-center gap-10 text-lg md:text-xl">
-          <li className="hover:text-[#570000] cursor-pointer">
-            <a href="/">Início</a>
+          
+          <li>
+            <a 
+              href="/" 
+              className="cursor-pointer transition transform hover:-translate-y-1 hover:scale-105 
+                         hover:text-[#570000] duration-200 inline-block"
+            >
+              Início
+            </a>
           </li>
-          <li className="hover:text-[#570000] cursor-pointer">
-            <a href="/cadastro">Cadastro</a>
+
+          <li>
+            <a 
+              href="/cadastro" 
+              className="cursor-pointer transition transform hover:-translate-y-1 hover:scale-105 
+                         hover:text-[#570000] duration-200 inline-block"
+            >
+              Cadastro
+            </a>
           </li>
-          <li className="hover:text-[#570000] cursor-pointer">
-            <a href="/contato">Contato</a>
+
+          <li>
+            <a 
+              href="/contato" 
+              className="cursor-pointer transition transform hover:-translate-y-1 hover:scale-105 
+                         hover:text-[#570000] duration-200 inline-block"
+            >
+              Contato
+            </a>
           </li>
+        
         </ul>
 
       </nav>
