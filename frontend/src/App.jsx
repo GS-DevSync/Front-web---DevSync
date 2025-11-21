@@ -7,6 +7,7 @@ import Projetos from './routes/Projetos.jsx';
 import PerfilPessoal from './routes/PerfilPessoal.jsx';
 import PerfilCorporativo from './routes/PerfilCorporativo.jsx';
 import ProjetosPessoais from './routes/ProjetosPessoais.jsx';
+import Chat from './routes/Chat.jsx';
 import Error from './routes/Error.jsx';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/perfilpessoal" element={<PerfilPessoal />} />
         <Route path="/perfilcorporativo" element={<PerfilCorporativo />} />
         <Route path="/projetospessoais" element={<ProjetosPessoais />} />
+        <Route path="/chat" element={<Chat />} />
         <Route path="*" element={<Error />} />
       </Routes>
       </main>
