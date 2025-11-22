@@ -1,4 +1,4 @@
-# Descrição do Projeto
+# Descrição do Projeto 💻
 
 O DevSync é uma plataforma web voltada para desenvolvedores e empresas que desejam criar, gerenciar e participar de projetos colaborativos. A ideia é formar uma comunidade ativa, onde diferentes profissionais de tecnologia podem testar suas habilidades, colaborar em projetos reais e ganhar experiência prática.
 
@@ -29,7 +29,19 @@ Outros desenvolvedores podem se inscrever nesses projetos, e os donos do projeto
   
   •	Plataforma voltada para colaboração e aprendizado
 
+# Instalação 	
+  1. Abra o arquivo no seu VScode.
+ 
+  2. Entre em ambas as pastas backend e frontend.
 
+  3. npm install.
+
+  4. npm run dev.
+
+# Usuários e senhas
+  1. Os 5 primeiros usuários foram criados manualmente, aconselho a utilização do perfil DevSync como perfil corporativo, e "Ana" como perfil pessoal, ambos possuem a senha: 123
+
+  2. Também é possível utilizar os outros, basta pegar o email desejado. A senha para todos é: 123456
 
 # Como Funciona
   1.	Cadastro: Usuário cria uma conta como Desenvolvedor ou Empresa.
