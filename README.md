@@ -3,15 +3,15 @@
 O DevSync é uma plataforma web voltada para desenvolvedores e empresas que desejam criar, gerenciar e participar de projetos colaborativos. A ideia é formar uma comunidade ativa, onde diferentes profissionais de tecnologia podem testar suas habilidades, colaborar em projetos reais e ganhar experiência prática.
 
 Tanto empresas quanto desenvolvedores podem criar projetos, descrevendo detalhes importantes como:
-	•	Linguagens utilizadas
+    •  Linguagens utilizadas
   
-  •	Descrição completa do projeto
+    •	Descrição completa do projeto
   
-  •	Remuneração (opcional)
+    •	Remuneração (opcional)
   
-  •	Prazo de entrega (opcional)
+    •	Prazo de entrega (opcional)
   
-  •	Qualquer outra informação relevante para a participação
+    •	Qualquer outra informação relevante para a participação
 
 Outros desenvolvedores podem se inscrever nesses projetos, e os donos do projeto podem aprovar ou recusar a participação. Isso promove networking, aprendizado e desenvolvimento de habilidades.
 
@@ -71,8 +71,15 @@ Outros desenvolvedores podem se inscrever nesses projetos, e os donos do projeto
 O objetivo do DevSync é:
 	•	Facilitar a conexão entre desenvolvedores e empresas
   
-  •	Proporcionar experiências reais de desenvolvimento
+    •	Proporcionar experiências reais de desenvolvimento
   
-  •	Incentivar a colaboração entre profissionais de diferentes áreas da tecnologia
+    •	Incentivar a colaboração entre profissionais de diferentes áreas da tecnologia
   
-  •	Ajudar no crescimento e aprendizado dentro da comunidade Dev
+    •	Ajudar no crescimento e aprendizado dentro da comunidade Dev
+
+
+Link do repositório: https://github.com/GS-DevSync/Front-web---DevSync
+
+
+Ana Luiza De Franco e Rinaldi - RM564061
+Giovanna Lins Sayama - RM565901
